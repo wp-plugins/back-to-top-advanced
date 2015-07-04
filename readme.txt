@@ -41,6 +41,8 @@ e.g.
 
 Ask in wordpress forum, but you can contact me directly.
 
+I would prefer answer directly.
+
 == Screenshots ==
 
 1. Frontend look
