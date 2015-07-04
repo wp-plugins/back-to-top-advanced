@@ -18,7 +18,6 @@ Be original and add it to your website to share your social media profiles, allo
 Some features:
 
 * Color scheme
-* Jquery easing effect
 * Administration panel with lot of options available
 * All most popular social portals available
 * Helper icons that increases ux
