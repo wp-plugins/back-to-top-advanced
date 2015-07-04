@@ -1,0 +1,80 @@
+.back-to-top-advanced.no-js {
+	display: none;
+}
+.back-to-top-advanced {
+	z-index: 999999;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+.back-to-top-advanced .back-to-top-advanced-left {
+	float:left;
+}
+.back-to-top-advanced .back-to-top-advanced-social,
+.back-to-top-advanced .back-to-top-advanced-options,
+.back-to-top-advanced .back-to-top-advanced-top,
+.back-to-top-advanced .back-to-top-advanced-buttons {
+	float: left;
+}
+.back-to-top-advanced .back-to-top-advanced-social,
+.back-to-top-advanced .back-to-top-advanced-options {
+	margin-right: 10px;
+}
+.back-to-top-advanced .back-to-top-advanced-top {
+	float: right;
+	margin-bottom: 10px;
+}
+.back-to-top-advanced .back-to-top-advanced-top .button-advanced {
+	float: none;
+}
+.button-advanced {
+	float: left;
+	padding: 2px 10px;
+	cursor: pointer;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.back-to-top-advanced .fa-lg {
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: initial;
+}
+.back-to-top-advanced-clearfix {
+	clear: both;
+}
+.btta-white .button-advanced {
+	background: #ffffff;
+	color: #000000;
+}
+.btta-white .button-advanced:hover {
+	background: #e3e3e3;
+}
+.btta-white .button-advanced a {
+	color: #000000;
+}
+.btta-white .button-advanced a:hover {
+	color: #000000;
+}
+
+.btta-black .button-advanced {
+	background: #000000;
+	color: #fff;
+}
+.btta-black .button-advanced:hover {
+	background: #454545;
+}
+.btta-black .button-advanced a {
+	color: #ffffff;
+}
+.btta-black .button-advanced a:hover {
+	color: #ffffff;
+}
+
+body.back-to-top-advanced-textsize {
+	font-size: 200%;
+}
+
+body.back-to-top-advanced-background {
+	background: #000000;
+}
