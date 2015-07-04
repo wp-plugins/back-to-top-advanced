@@ -24,7 +24,7 @@ class BackToTopAdvnaced
 	{
 		wp_enqueue_style('back-to-top-advanced-style-font-awesome-4.3.0', plugins_url( '../assets/font-awesome-4.3.0/css/font-awesome.min.css', __FILE__ ), array(), '4.3.0', 'all');
 		wp_enqueue_style('back-to-top-advanced-style', plugins_url( '../assets/style.css', __FILE__ ), array(), 1, 'all');
-		wp_enqueue_script('back-to-top-advanced-easing', plugins_url( '../assets/jquery.easing.1.3.js', __FILE__ ),array('jquery'),'1.3',false);		
+		//wp_enqueue_script('back-to-top-advanced-easing', plugins_url( '../assets/jquery.easing.1.3.js', __FILE__ ),array('jquery'),'1.3',false);		
 		wp_enqueue_script('back-to-top-advanced-js', plugins_url( '../assets/script.js', __FILE__ ),array('jquery','jquery-core'),1,false);		
 	}
 	
