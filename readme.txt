@@ -36,7 +36,7 @@ Some features:
 
 = Where to get support? =
 
-Ask in wordpress forum, but you can contact me directly (recommended).
+Contact me directly via email (recommended).
 
 == Screenshots ==
 
