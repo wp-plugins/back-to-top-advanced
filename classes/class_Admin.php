@@ -10,6 +10,7 @@ class BackToTopAdvnacedAdmin
 	{
 		add_action( 'admin_menu', array( $this, 'btta_plugin_page' ) );
 		add_action( 'admin_init', array( $this, 'btta_page_init' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'loadAdminStyles' ) );
 	}
 	
 	/**
@@ -33,16 +34,29 @@ class BackToTopAdvnacedAdmin
 	{
 		$this->options = get_option( 'btta_settings' );		
 		?>
-        <div class="wrap">
-            <h2><?php echo __("Back To Top Advanced Settings", "back-to-top-advanced"); ?></h2>           
-            <form method="post" action="options.php">
-            <?php
-                settings_fields( 'btta_settings_group' );   
-                do_settings_sections( 'btta-admin-page' );
-                submit_button(); 
-            ?>
-            </form>
-        </div>
+		<div class="wrap back-to-top-advanced-admin-wrap">
+			<div class="back-to-top-advanced-admin-col-left">
+				<div class="back-to-top-advanced-admin-col-left-inner">
+					<div class="back-to-top-advanced-admin-well back-to-top-advanced-admin-header"><h1><?php echo __("Back To Top Advanced Settings", "back-to-top-advanced"); ?></h1></div>
+					<h2 class="back-to-top-advanced-admin-display-none"></h2>
+					<div class="back-to-top-advanced-admin-well">
+			            <form method="post" action="options.php">
+			            <?php
+			                settings_fields( 'btta_settings_group' );   
+			                do_settings_sections( 'btta-admin-page' );
+			                submit_button(); 
+			            ?>
+			            </form>
+					</div>
+				</div>
+			</div>
+			<div class="back-to-top-advanced-admin-col-right">
+			<a href="http://arturssmirnovs.com/donate/?plugin=1&version=1.1" target="_blank">
+			<img src="http://arturssmirnovs.com/images/donate-banner-300x600.png">
+			</a>
+			</div>
+			<div class="back-to-top-advanced-admin-clearfix"></div>
+		</div>
         <?php
     }
     
@@ -321,7 +335,17 @@ class BackToTopAdvnacedAdmin
     	    <option value="" '.selected( $this->options["enable_social"], "", false ).'>'.__("Disable", "back-to-top-advanced").'</option>
     	</select>');
     }
-
+    
+    /**
+     * Loads admin style
+     */
+    public function loadAdminStyles ()
+    {
+    	wp_enqueue_style('back-to-top-advanced-admin-style', plugins_url( '../assets/admin-style.css', __FILE__ ), array(), '1.1', 'all');
+    	wp_enqueue_style( 'back-to-top-advanced-admin-style' );
+    	 
+    }
+    
     /**
      * BTTA install hook
      */

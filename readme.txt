@@ -14,6 +14,8 @@ Back to top advanced scroll icon that does alot more than scroll. Be original an
 
 Back to top advanced scroll icon that does alot more than scroll.
 Be original and add it to your website to share your social media profiles, allow users to simply access important features and edit content real time.
+Includes admin helper features and lot more.
+Try this out.
 
 Some features:
 
@@ -25,10 +27,6 @@ Some features:
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload directory to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Change settings for plugin
@@ -38,9 +36,7 @@ e.g.
 
 = Where to get support? =
 
-Ask in wordpress forum, but you can contact me directly.
-
-I would prefer answer directly.
+Ask in wordpress forum, but you can contact me directly (recommended).
 
 == Screenshots ==
 
@@ -48,6 +44,10 @@ I would prefer answer directly.
 2. Backend look
 
 == Changelog ==
+
+= 1.1 =
+* Updated admin panel interface
+* Add edit article feature
 
 = 1.0 =
 * First version.

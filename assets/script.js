@@ -26,8 +26,8 @@ jQuery(document).ready(function($){
 	 */
 	$( ".button-advanced.button-advanced-settings" ).click(function( event ) {
 		event.preventDefault();
-		$( ".back-to-top-advanced-left" ).toggle( );
-		$( ".back-to-top-advanced-top" ).toggle( );
+		$( ".back-to-top-advanced-left" ).toggle();
+		$( ".back-to-top-advanced-top" ).toggle();
 		$( ".btta-toggle" ).toggleClass("fa-angle-right");
 	});
 	
